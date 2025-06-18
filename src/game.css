@@ -1,0 +1,82 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.game {
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #00bcd4;
+  text-shadow: 0 0 10px #00bcd4;
+}
+
+.status {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: #f0f0f0;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #1e1e1e;
+  border: 2px solid #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.2);
+}
+
+.square:hover {
+  background-color: #292929;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+}
+
+.square:focus {
+  outline: none;
+}
+
+.square.X {
+  color: #ff4081;
+  text-shadow: 0 0 10px #ff4081;
+}
+
+.square.O {
+  color: #00e5ff;
+  text-shadow: 0 0 10px #00e5ff;
+}
+
+.reset {
+  margin-top: 30px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #00bcd4;
+  border: none;
+  border-radius: 6px;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.reset:hover {
+  background-color: #00e5ff;
+  transform: scale(1.05);
+}
