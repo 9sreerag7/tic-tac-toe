@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Board from "./Board";
-import "./game.css";
 
 export default function App() {
   const [squares, setSquares] = useState(Array(9).fill(null));
